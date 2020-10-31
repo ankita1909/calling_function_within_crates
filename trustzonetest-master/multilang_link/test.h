@@ -1,0 +1,1 @@
+static volatile unsigned int * const UART_DR;

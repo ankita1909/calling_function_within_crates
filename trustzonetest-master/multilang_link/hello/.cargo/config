@@ -1,0 +1,3 @@
+[build]
+#target = "thumbv7m-none-eabi" # cortex-M3
+target = "thumbv8m.main-none-eabihf" # cortex-M33
