@@ -1,17 +1,15 @@
+
 #![no_std]
-#![no_main]
 
 // The libc crate allows importing functions from C.
-extern crate libc;
-
+//extern crate hello;
 // A list of C functions that are being imported
 extern {
     pub fn printf(format: *const u8, ...) -> i32;
+    pub fn secure_input(format: u8) -> u8;
 }
 
 #[no_mangle]
-// The main function, with its input arguments ignored, and an exit status is returned
-
 pub extern "C" fn c_rust_ns(count: u8) -> u8 {
     unsafe {
         printf(b"Hello, World!\n" as *const u8);
@@ -23,7 +21,9 @@ pub extern "C" fn c_rust_ns(count: u8) -> u8 {
      // println!("[{}]",arg); //print all values passed 
  //}
     let input = get_input();
-   // secure_input(input);
+    unsafe{
+	    secure_input(input);
+	}
     input
 }
 

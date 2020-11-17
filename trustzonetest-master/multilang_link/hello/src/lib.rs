@@ -1,5 +1,4 @@
 #![no_std]
-#![no_main]
 
 // The libc crate allows importing functions from C.
 extern crate libc;
@@ -33,3 +32,8 @@ fn panic(_panic: &PanicInfo<'_>) -> ! {
     loop {}
 }
 
+pub extern "C" fn  secure_input(input: u8) -> u8 {
+ 
+    input*0
+  
+}

@@ -1,0 +1,1 @@
+/home/onki/Downloads/Fraunhofer_work/ruct+c/callingFuncBWcrates/proj2/target/debug/libproj2.rlib: /home/onki/Downloads/Fraunhofer_work/ruct+c/callingFuncBWcrates/proj/src/lib.rs /home/onki/Downloads/Fraunhofer_work/ruct+c/callingFuncBWcrates/proj2/src/lib.rs

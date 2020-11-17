@@ -1,0 +1,14 @@
+[package]
+name = "program2"
+version = "0.1.0"
+authors = ["ankita1909 <ankitarkr19@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+program1 = { path = "../program1", version = "0.1.0"}
+
+[build-dependencies]
+program1 = { path = "../program1", version = "0.1.0"}
+
